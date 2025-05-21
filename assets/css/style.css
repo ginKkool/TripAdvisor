@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+button,
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+/* HEADER - nav */
+
+nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+nav img {
+  width: 190px;
+  height: 41px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item-avis {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-item-voyages {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-item-alertes {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-item-connect {
+  display: flex;
+  gap: 5px;
+  background-color: black;
+  color: white;
+  padding: 13px;
+  border-radius: 50px;
+  border: none;
+}
+
+.nav-item-connect:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-item-panier {
+  display: flex;
+  gap: 5px;
+}
+
+/* MAIN - Explorez Paris */
+
+main {
+  width: 1100px;
+
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+main h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main h1 span {
+  color: #ff5e5e;
+}
+
+.catchline {
+  font-size: 15px;
+  font-weight: lighter;
+  padding-top: 10px;
+}
+
+.catchline a {
+  color: black;
+}
+
+/* MAIN nav */
+
+.main-nav {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.main-nav-box1 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.main-nav-box1:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.main-nav-box2 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.main-nav-box2:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.main-nav-box3 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.main-nav-box3:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.main-nav-box4 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.main-nav-box4:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.main-nav-box5 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.main-nav-box5:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.main-nav-box6 {
+  width: 175px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.main-nav-box6:hover {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+/* MAIN - photos */
+
+.main-photo-boxes {
+  height: 430px;
+  display: flex;
+  margin: 20px 0px;
+  gap: 2px;
+}
+
+.photo-box1 {
+  flex: 1;
+}
+
+.photo-box2 {
+  width: 480px;
+}
+
+.photo-box2a {
+  height: calc(50% - 1px);
+  margin-bottom: 2px;
+}
+
+.photo-box2b {
+  height: calc(50% - 1px);
+}
+
+.main-photo-boxes img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MAIN - info1 */
+
+.main-info1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.main-info1-a {
+  width: 548px;
+  height: 472px;
+}
+
+.main-info1-a h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main-info1-a p {
+  padding-top: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: lighter;
+}
+
+.main-info1-b {
+  background-color: #ff5e5e;
+  border-radius: 15px;
+  width: 428px;
+  height: 472px;
+}
+
+.main-info1-b h2 {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 35px;
+  padding: 32px;
+}
+
+.main-info1-b p {
+  padding-left: 32px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.main-info1-b1-button {
+  background-color: black;
+  color: white;
+  padding: 13px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+.main-info1-b1-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.main-info1-b2 {
+  background-color: aquamarine;
+  height: 200px;
+  margin-top: 47px;
+}
+
+.main-info1-b2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MAIN - info2 */
+
+.main-info2 {
+  padding-top: 90px;
+}
+
+.main-info2-bloc1 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.main-info2 h2 {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.main-info2-box1 h3 {
+  font-size: 23px;
+}
+
+.main-info2-box1 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.main-info2-box1 {
+  background-color: wheat;
+  width: 296px;
+  height: 328px;
+}
+
+.main-info2-box2 {
+  background-color: coral;
+  width: 256px;
+  height: 328px;
+}
