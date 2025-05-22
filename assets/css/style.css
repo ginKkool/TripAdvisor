@@ -260,6 +260,7 @@ main h1 span {
   border-radius: 15px;
   width: 428px;
   height: 472px;
+  overflow: hidden;
 }
 
 .main-info1-b1 h2 {
@@ -373,6 +374,10 @@ main h1 span {
   right: 10px;
   color: rgb(230, 115, 135);
   font-size: 25px;
+  padding: 9px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 75%;
 }
 
 .lieux {
@@ -411,45 +416,39 @@ main h1 span {
   line-height: 35px;
 }
 
-.info3-bloc {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* info3 - box */
-
-.info3-box {
-  width: 350px;
-  height: 380px;
-}
-
-.info3-box img {
-  height: 80%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.info3-box p {
-  padding-top: 5px;
-}
-
-/* Footer */
-
-footer {
-  background-color: #faf1ed;
-  height: 160px;
-  margin-top: 80px;
-}
-
-.footer-copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-  gap: 10px;
-}
-
 .footer-copyright img {
   width: 40px;
+}
+
+@media (max-width: 1184px) {
+  header {
+    background-color: orange;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: blueviolet;
+  }
+  .avis {
+    display: none;
+  }
+  .voyages {
+    display: none;
+  }
+  .alertes {
+    display: none;
+  }
+  .main-nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: aquamarine;
+  }
 }
