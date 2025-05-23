@@ -7,14 +7,18 @@ body {
   font-family: TS-Reg, sans-serif;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
 /* HEADER - nav */
 
 nav {
   height: 60px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 1100px;
+  justify-content: space-between;
 }
 
 nav img {
@@ -24,8 +28,8 @@ nav img {
 
 .nav-item {
   display: flex;
-  justify-content: flex-end;
-  flex: 1;
+  /* justify-content: flex-end; */
+  /* flex: 1; */
   align-items: center;
   gap: 20px;
 }
@@ -65,12 +69,17 @@ nav img {
   gap: 5px;
 }
 
+.icon-menu {
+  display: none;
+}
+
+.icon-loupe {
+  display: none;
+}
+
 /* MAIN - Explorez Paris */
 
 main {
-  width: 1100px;
-
-  margin: 0 auto;
   padding-top: 50px;
 }
 
@@ -98,103 +107,32 @@ main h1 span {
 .main-nav {
   display: flex;
   padding-top: 40px;
+
   justify-content: space-between;
-  padding-bottom: 30px;
 }
 
-.main-nav-box1 {
+.main-nav-box {
   width: 175px;
   height: 65px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
-.main-nav-box1:hover {
+
+.main-nav-box:hover {
   background-color: black;
   border: none;
   color: white;
 }
 
-.main-nav-box2 {
-  width: 175px;
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-.main-nav-box2:hover {
-  background-color: black;
-  border: none;
-  color: white;
+.main-nav div:nth-child(6) {
+  display: none;
 }
 
-.main-nav-box3 {
-  width: 175px;
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.main-nav-box3:hover {
-  background-color: black;
-  border: none;
-  color: white;
-}
-
-.main-nav-box4 {
-  width: 175px;
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.main-nav-box4:hover {
-  background-color: black;
-  border: none;
-  color: white;
-}
-
-.main-nav-box5 {
-  width: 175px;
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.main-nav-box5:hover {
-  background-color: black;
-  border: none;
-  color: white;
-}
-
-.main-nav-box6 {
-  width: 175px;
-  height: 65px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.main-nav-box6:hover {
-  background-color: black;
-  border: none;
-  color: white;
+.main-nav div:nth-child(7) {
+  display: none;
 }
 
 /* MAIN - photos */
@@ -420,17 +358,75 @@ main h1 span {
   width: 40px;
 }
 
+.info3-bloc {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* info3 - box */
+
+.info3-box {
+  width: 350px;
+  height: 380px;
+}
+
+.info3-box img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info3-box p {
+  padding-top: 5px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #faf1ed;
+  height: 160px;
+  margin-top: 80px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  gap: 10px;
+}
+
+.footer-copyright img {
+  width: 40px;
+}
+
+/* Media query */
+
 @media (max-width: 1184px) {
   header {
     background-color: orange;
+  }
+  .main-nav div:nth-child(6) {
+    display: block;
+    display: flex;
+  }
+
+  .main-nav div:nth-child(7) {
+    display: block;
+    display: flex;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
   }
 }
 
 @media (max-width: 1024px) {
   header {
-    height: 100%;
-    width: 100%;
-    margin: 0;
     background-color: blueviolet;
   }
   .avis {
@@ -442,6 +438,14 @@ main h1 span {
   .alertes {
     display: none;
   }
+  .panier {
+    display: none;
+  }
+  nav {
+    /* gap: 50px; */
+    padding: 0px 20px;
+  }
+
   .main-nav {
     flex-wrap: wrap;
   }
@@ -450,5 +454,25 @@ main h1 span {
 @media (max-width: 768px) {
   header {
     background-color: aquamarine;
+  }
+
+  .nav-item-avis {
+    display: none;
+  }
+  .nav-item-voyages {
+    display: none;
+  }
+  .nav-item-alertes {
+    display: none;
+  }
+  .nav-item-connect {
+    display: none;
+  }
+
+  .icon-menu {
+    display: block;
+  }
+  .icon-loupe {
+    display: block;
   }
 }

@@ -10,27 +10,44 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
-    <link rel="shortcut icon" href="./assets/img/favicon-tripadvisor.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon-tripadvisor.svg"
+      type="image/x-icon"
+    />
     <title>TripAdvisor</title>
   </head>
   <body>
     <header>
-      <nav>
-        <img src="./assets/img/Tripadvisor_logo.svg" alt="logo Tripadvisor" />
+      <nav class="wrapper">
+        <div class="icon-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo-tripadvisor">
+          <img src="./assets/img/Tripadvisor_logo.svg" alt="logo Tripadvisor" />
+        </div>
         <div class="nav-item">
           <div class="nav-item-avis">
             <i class="fa-solid fa-pen"></i>
             <div class="avis">Avis</div>
           </div>
+
           <div class="nav-item-voyages">
             <i class="fa-solid fa-heart"></i>
             <div class="voyages">Voyages</div>
           </div>
+
           <div class="nav-item-alertes">
             <i class="fa-solid fa-bell"></i>
             <div class="alertes">Alertes</div>
           </div>
+
           <button class="nav-item-connect">Connectez-vous</button>
+
+          <div class="icon-loupe">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
           <div class="nav-item-panier">
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="panier">Panier</div>
@@ -39,7 +56,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="wrapper">
       <section>
         <h1><span>Explorez</span> Paris</h1>
         <div class="catchline">
@@ -50,27 +67,35 @@
 
       <section>
         <div class="main-nav">
-          <div class="main-nav-box1">
+          <div class="main-nav-box">
             <p>Hôtels</p>
             <i class="fa-solid fa-bed"></i>
           </div>
-          <div class="main-nav-box2">
+          <div class="main-nav-box">
             <p>Locations de vacances</p>
             <i class="fa-solid fa-house-lock"></i>
           </div>
-          <div class="main-nav-box3">
+          <div class="main-nav-box">
             <p>Activités</p>
             <i class="fa-solid fa-road"></i>
           </div>
-          <div class="main-nav-box4">
+          <div class="main-nav-box">
             <p>Restaurants</p>
             <i class="fa-solid fa-utensils"></i>
           </div>
-          <div class="main-nav-box5">
+          <div class="main-nav-box">
             <p>Forums de voyage</p>
             <i class="fa-solid fa-comments"></i>
           </div>
-          <div class="main-nav-box6">
+          <div class="main-nav-box">
+            <p>Vol</p>
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <div class="main-nav-box">
+            <p>Croisières</p>
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <div class="main-nav-box">
             <p>Plus</p>
             <i class="fa-solid fa-plus"></i>
           </div>
@@ -214,106 +239,104 @@
       </section>
 
       <section>
-       
-          <div class="main-info2-bloc1">
-            <div class="main-info2-box1">
-              <h3>Se restaurer</h3>
-              <p>
-                Bistrots et bars typiques, et plus encore à Paris.
-              </p>
-              <div class="tout-afficher">
-                <a href="">Tout afficher</a>
-              </div>
+        <div class="main-info2-bloc1">
+          <div class="main-info2-box1">
+            <h3>Se restaurer</h3>
+            <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+            <div class="tout-afficher">
+              <a href="">Tout afficher</a>
             </div>
-            <div class="caroussel">
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal6.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">Frenchie</a>
-                </div>
-                <p>
-                  €€€€ · Française, Végétariens bienvenus, Plats sans gluten
-                </p>
+          </div>
+          <div class="caroussel">
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal6.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Frenchie</a>
               </div>
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal5.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">114 Faubourg</a>
-                </div>
-                <p>€€ · Française, Européenne, Végétariens bienvenus</p>
+              <p>€€€€ · Française, Végétariens bienvenus, Plats sans gluten</p>
+            </div>
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal5.jpg" alt="" />
+              <div class="lieux">
+                <a href="">114 Faubourg</a>
               </div>
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal4.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">Verjus</a>
-                </div>
-                <p>€€€ · Française, Européenne, Moderne</p>
+              <p>€€ · Française, Européenne, Végétariens bienvenus</p>
+            </div>
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal4.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Verjus</a>
               </div>
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal3.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">ASPIC</a>
-                </div>
-                <p>€€€€ · Française, Européenne, Saine</p>
+              <p>€€€ · Française, Européenne, Moderne</p>
+            </div>
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal3.jpg" alt="" />
+              <div class="lieux">
+                <a href="">ASPIC</a>
               </div>
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal2.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">Bistrot chic</a>
-                </div>
-                <p>€€€ · Française, Européenne, Saine, Moderne</p>
+              <p>€€€€ · Française, Européenne, Saine</p>
+            </div>
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal2.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Bistrot chic</a>
               </div>
-              <div class="main-info2-box2">
-                <i class="fa-solid fa-heart"></i>
-                <img src="./assets/img/meal1.jpg" alt="" />
-                <div class="lieux">
-                  <a href="">Vive les huîtres</a>
-                </div>
-                <p>€€€€ · Française, Moderne, Bar à vins</p>
+              <p>€€€ · Française, Européenne, Saine, Moderne</p>
+            </div>
+            <div class="main-info2-box2">
+              <i class="fa-solid fa-heart"></i>
+              <img src="./assets/img/meal1.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Vive les huîtres</a>
               </div>
+              <p>€€€€ · Française, Moderne, Bar à vins</p>
             </div>
           </div>
         </div>
       </section>
 
- <section>
-<div class="main-info3">
-<h2>Guides de voyageurs</h2>
-<div class="info3-bloc">
-  <div class="info3-box">
-    <img src="./assets/img/visit1.jpg" alt="">
-    <div class="lieux">
-     <a href="">Best summer things to do in Paris | Eatwith</a>
-     <p>36 articles</p>
-    </div>
-  </div>
-  <div class="info3-box">
-    <img src="./assets/img/visit2.jpg" alt="">
-    <div class="lieux">
-     <a href="">Les 10 monuments et musées de Paris à faire</a>
-     <p>10 articles</p>
-    </div>
-  </div>
-  <div class="info3-box">
-    <img src="./assets/img/visit3.jpg" alt="">
-    <div class="lieux">
-     <a href="">Top 10 des choses à faire ou à voir dans le 14ème</a>
-     <p>10 articles</p>
-    </div>
-  </div>
-</div>
-</section>
-</main>
-<footer>
-  <div class="footer-copyright">
-<img src="./assets/img/favicon-tripadvisor.svg" alt="">
-<p>Made at <span style="font-weight: bold;">Le Reacteur</span> by <span style="font-weight: bold;">ginKkool</span></p>
-  </div>
-</footer>
+      <section>
+        <div class="main-info3">
+          <h2>Guides de voyageurs</h2>
+          <div class="info3-bloc">
+            <div class="info3-box">
+              <img src="./assets/img/visit1.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Best summer things to do in Paris | Eatwith</a>
+                <p>36 articles</p>
+              </div>
+            </div>
+            <div class="info3-box">
+              <img src="./assets/img/visit2.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Les 10 monuments et musées de Paris à faire</a>
+                <p>10 articles</p>
+              </div>
+            </div>
+            <div class="info3-box">
+              <img src="./assets/img/visit3.jpg" alt="" />
+              <div class="lieux">
+                <a href="">Top 10 des choses à faire ou à voir dans le 14ème</a>
+                <p>10 articles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-copyright">
+        <img src="./assets/img/favicon-tripadvisor.svg" alt="" />
+        <p>
+          Made at <span style="font-weight: bold">Le Reacteur</span> by
+          <span style="font-weight: bold">ginKkool</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
