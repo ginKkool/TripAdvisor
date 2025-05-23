@@ -139,8 +139,9 @@ main h1 span {
 
 .main-photo-boxes {
   height: 430px;
-  display: flex;
+  /* background-color: purple; */
   margin: 20px 0px;
+  display: flex;
   gap: 2px;
 }
 
@@ -177,7 +178,7 @@ main h1 span {
 
 .main-info1-a {
   width: 548px;
-  height: 472px;
+  padding-bottom: 50px;
 }
 
 .main-info1-a h2 {
@@ -354,10 +355,6 @@ main h1 span {
   line-height: 35px;
 }
 
-.footer-copyright img {
-  width: 40px;
-}
-
 .info3-bloc {
   margin-top: 30px;
   display: flex;
@@ -368,7 +365,6 @@ main h1 span {
 
 .info3-box {
   width: 350px;
-  height: 380px;
 }
 
 .info3-box img {
@@ -404,9 +400,15 @@ footer {
 /* Media query */
 
 @media (max-width: 1184px) {
-  header {
+  /*header {
     background-color: orange;
+  }*/
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
   .main-nav div:nth-child(6) {
     display: block;
     display: flex;
@@ -417,18 +419,29 @@ footer {
     display: flex;
   }
 
+  .main-nav > div {
+    flex: auto;
+    width: calc((100% - 30px) / 4);
+  }
   .main-nav {
     flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: flex-start;
     gap: 10px;
+  }
+
+  .main-photo-boxes {
+    height: 370px;
+  }
+
+  .photo-box2 {
+    width: 400px;
   }
 }
 
 @media (max-width: 1024px) {
-  header {
+  /*eader {
     background-color: blueviolet;
-  }
+  }*/
+
   .avis {
     display: none;
   }
@@ -445,16 +458,28 @@ footer {
     /* gap: 50px; */
     padding: 0px 20px;
   }
-
   .main-nav {
     flex-wrap: wrap;
+  }
+  .main-photo-boxes {
+    height: 270px;
+  }
+  .photo-box2 {
+    width: calc(100% / 3);
+  }
+  .main-info1 {
+    flex-wrap: wrap;
+  }
+  .info3-bloc {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 768px) {
-  header {
+  /*header {
     background-color: aquamarine;
-  }
+  }*/
 
   .nav-item-avis {
     display: none;
@@ -474,5 +499,24 @@ footer {
   }
   .icon-loupe {
     display: block;
+  }
+  .main-nav {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .main-nav > div {
+    flex-shrink: 0;
+  }
+  main h1 {
+    font-size: 35px;
+  }
+
+  .main-photo-boxes {
+    margin: 20px -20px;
+  }
+
+  .photo-box2 {
+    display: none;
   }
 }
