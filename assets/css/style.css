@@ -288,7 +288,7 @@ main h1 span {
 
 .main-info2-box1 {
   width: 250px;
-  height: 328px;
+
   flex-shrink: 0;
 }
 
@@ -296,7 +296,7 @@ main h1 span {
 
 .main-info2-box2 {
   width: 256px;
-  height: 328px;
+
   position: relative;
   flex-shrink: 0;
 }
@@ -435,6 +435,11 @@ footer {
   .photo-box2 {
     width: 400px;
   }
+  .info3-bloc {
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -518,5 +523,11 @@ footer {
 
   .photo-box2 {
     display: none;
+  }
+  .main-info2-bloc1 {
+    flex-wrap: wrap;
+  }
+  .main-info3 {
+    padding-top: 90px;
   }
 }
